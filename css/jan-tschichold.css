@@ -1,6 +1,35 @@
 @import 'fonts.css';
-@import 'sources.css';
-@import 'home.css';
+
+header {
+    margin: 0;
+}
+
+nav {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+ul {
+    text-align: center;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    padding: 0% 3% 0% 3%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
 
 main {
     margin: 0;

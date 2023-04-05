@@ -1,6 +1,36 @@
 @import 'fonts.css';
-@import 'sources.css';
-@import 'home.css';
+
+header {
+    margin: 0;
+}
+
+nav {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+ul {
+    text-align: center;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    padding: 0% 3% 0% 3%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-size: 3vh;
+}
+
+a:hover {
+    text-decoration: underline;
+}
 
 /*Yellow background*/
 body {
@@ -9,7 +39,7 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: 0.25fr 0.45fr;
+    grid-template-columns: 0.3fr 0.45fr;
     grid-template-rows: 0.05fr 0.5fr;
     margin-top: 0;
     padding-left: 20vw;
@@ -78,7 +108,9 @@ p {
     font-family: 'Roboto Flex', sans-serif;
     font-size: 5vh;
     margin: 0;
+    margin-left: 0.5vh;
     font-weight: 800;
+    text-align: left;
 }
 
 .quote-vertical {

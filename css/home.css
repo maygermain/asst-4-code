@@ -1,3 +1,10 @@
+body {
+    background: linear-gradient(45deg, #ff9580, #c4f0f0, #ffdbd2, #fff7d6, #ded8ff);
+    animation-name: gradientAnim;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
 main {
     margin: 0.5vh;
 }
@@ -15,14 +22,68 @@ ul {
 
 li {
     list-style-type: none;
+    margin: 2vh;
 }
 
 a {
     text-decoration: none;
-    color: black;
     font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    text-shadow: 2px 2px white;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px #ff9580;
+}
+
+/*----------------------------------------------*/
+@keyframes gradientAnim {
+    0% {
+        background: linear-gradient(30deg, #ff9580, #c4f0f0, #ffdbd2, #fff7d6, #ded8ff);
+    }
+
+    10% {
+        background: linear-gradient(60deg, #ff9580, #c4f0f0, #ffdbd2, #fff7d6, #ded8ff);
+    }
+
+    20% {
+        background: linear-gradient(90deg, #ff9580, #c4f0f0, #ffdbd2, #fff7d6, #ded8ff);
+    }
+
+    30% {
+        background: linear-gradient(120deg, #ff9580, #c4f0f0, #ffdbd2, #fff7d6, #ded8ff);
+    }
+
+    40% {
+        background: linear-gradient(150deg, #ff9580, #c4f0f0, #ffdbd2, #fff7d6, #ded8ff);
+    }
+
+    50% {
+        background: linear-gradient(180deg, #ff9580, #c4f0f0, #ffdbd2, #fff7d6, #ded8ff);
+    }
+
+    60% {
+        background: linear-gradient(210deg, #ff9580, #c4f0f0, #ffdbd2, #fff7d6, #ded8ff);
+    }
+
+    70% {
+        background: linear-gradient(240deg, #ff9580, #c4f0f0, #ffdbd2, #fff7d6, #ded8ff);
+    }
+
+    80% {
+        background: linear-gradient(270deg, #ff9580, #c4f0f0, #ffdbd2, #fff7d6, #ded8ff);
+    }
+
+    90% {
+        background: linear-gradient(300deg, #ff9580, #c4f0f0, #ffdbd2, #fff7d6, #ded8ff);
+    }
+
+    100% {
+        background: linear-gradient(330deg, #ff9580, #c4f0f0, #ffdbd2, #fff7d6, #ded8ff);
+    }
 }
