@@ -1,0 +1,107 @@
+@import 'fonts.css';
+@import 'sources.css';
+@import 'home.css';
+
+body {
+  background-color: lightblue;
+}
+
+main {
+  margin: 0vw 15vh 5vw 15vw;
+}
+
+.quote-and-banana {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.banana {
+  grid-column: 1;
+  margin-top: 10vh;
+  width: 50%;
+  animation-name: bananaAnim;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.quote {
+  grid-column: 2;
+}
+
+p {
+  margin-top: 10vh;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: white;
+  text-align: right;
+}
+
+.name {
+  animation-name: leftSlideAnim;
+  animation-duration: 1s;
+}
+
+h2 {
+  font-family: 'Gloria Hallelujah', sans-serif;
+  font-size: 5vw;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Gloria Hallelujah', sans-serif;
+  font-size: 8vw;
+  margin: 0;
+  margin-top: -10vh;
+}
+
+/*------------------------------------------------*/
+@keyframes bananaAnim {
+  0% {
+    transform: rotate(10deg);
+  }
+
+  25% {
+    transform: rotate(-10deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  75% {
+    transform: rotate(-120deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes leftSlideAnim {
+  0% {
+    margin: -20px;
+    opacity: 0%;
+  }
+
+  25% {
+    margin: -15px;
+    opacity: 25%;
+  }
+
+  50% {
+    margin: -10px;
+    opacity: 50%;
+  }
+
+  75% {
+    margin: -5px;
+    opacity: 75%;
+  }
+
+  100% {
+    margin: 0px;
+    opacity: 100%;
+  }
+}

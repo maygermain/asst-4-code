@@ -1,0 +1,137 @@
+@import 'fonts.css';
+@import 'sources.css';
+@import 'home.css';
+
+/*Yellow background*/
+body {
+    background-color: yellow;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 0.25fr 0.45fr;
+    grid-template-rows: 0.05fr 0.5fr;
+    margin-top: 0;
+    padding-left: 20vw;
+}
+
+.name {
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Roboto Flex', sans-serif;
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 10vh;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Roboto Flex', sans-serif;
+    writing-mode: vertical-rl;
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 15vw;
+    margin: 0;
+    margin-left: -5vh;
+    animation-name: nameGrowAnim;
+    animation-duration: 3s;
+}
+
+.quote {
+    text-transform: uppercase;
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    margin-top: 30vh;
+    grid-template-columns: 0.25fr 0.5fr;
+    grid-template-rows: 0.25fr 0.5fr;
+    transform: rotate(45deg);
+}
+
+p {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 3vh;
+    margin: 0;
+    text-align: center;
+}
+
+.lg--bold {
+    font-family: 'Bebas Neue';
+    font-weight: 800;
+    font-size: 8vh;
+    margin: 0;
+    text-align: center;
+    color: red;
+    animation-name: wordBoldAnim;
+    animation-duration: 3s;
+}
+
+.grow {
+    font-size: 10vh;
+    animation-name: wordBoldAnim;
+    animation-duration: 3s;
+}
+
+.lg {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 5vh;
+    margin: 0;
+    font-weight: 800;
+}
+
+.quote-vertical {
+    grid-column: 1;
+    grid-row: 2;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+.quote-horizontal {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+.quote-vertical-ii {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+/*---------------------------------------------*/
+@keyframes nameGrowAnim {
+    from {
+        font-size: 5vw;
+    }
+
+    to {
+        font-size: 15vw;
+    }
+}
+
+@keyframes wordBoldAnim {
+    0% {
+        font-weight: 300;
+        color: rgba(255, 0, 0, 0)
+    }
+
+    25% {
+        font-weight: 400;
+        color: rgba(255, 0, 0, 0.25)
+    }
+
+    50% {
+        font-weight: 500;
+        color: rgba(255, 0, 0, 0.50)
+    }
+
+    75% {
+        font-weight: 600;
+        color: rgba(255, 0, 0, 0.75)
+    }
+
+    100% {
+        font-weight: 700;
+        color: rgba(255, 0, 0, 1)
+    }
+}
